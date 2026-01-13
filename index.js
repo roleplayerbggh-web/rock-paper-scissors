@@ -7,7 +7,6 @@ let rock = document.getElementById("rock")
 let paper = document.getElementById("paper")
 let scissors = document.getElementById("scissors")
 let para = document.getElementById("speak")
-let ng = document.getElementById("ng")
 let score = 0
 
 function update_game() {
@@ -79,8 +78,3 @@ scissors.addEventListener("click", function () {
 	console.log("scissors")
 })
 
-ng.addEventListener("click", function () {
-	random_choice = Math.floor(Math.random() * 3) + 1
-	console.log(random_choice)
-	para.textContent = "Choose wisely..."
-})
